@@ -44,3 +44,8 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(statsSection);
+
+function activateDot(dotNumber) {
+  document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+  document.getElementById('dot' + dotNumber).classList.add('active');
+}
