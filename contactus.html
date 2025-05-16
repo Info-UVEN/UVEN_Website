@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
-    <head>
+<head>
+    <title>UVEN</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - UVEN</title>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contactus.css">
 
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <body>
+
+</head>
+
+<body>
     <div class="navigation">
 
         <div class="leftnav">
@@ -21,72 +30,56 @@
         <div class="rightnav">
             <p><a href=index.html>Home</a></p>
             <p><a href=AboutUs.html>About Us</a></p>
-            <p>Services</p>
-            <p>Sectors</p>
-            <p>Projects</p>
+            <p><a href=services.html>Services</a></p>
+            <p><a href=sectors.html>Sectors</a></p>
+            <p><a href=projects.html>Projects</a></p>
             <p><a href=contactus.html>Contact Us</a></p>
         </div>
 
     </div>
 
-    
-    <div class="main-container">
-        <p id="contact-us">Contact Us</p>
-        <h3 id="sub-contact-us">We'd love to hear from you!</h3>
-        <hr>
-        <div class="sub-container">
-            <div class="part1">
-                <form id="contactForm">
-                    <div class="row">
-                        <input type="email" placeholder="Email" class="input-button" id="email">
-                        <input type="number" placeholder="Phone Number" class="input-button" id="phone">
-                    </div>
-                
-                    <div class="row"><input type="text" placeholder="Name" class="input-button" id="name"></div>
-                
-                    <div class="row"><textarea placeholder="Message" class="input-button message-box" id="message"></textarea></div>
-                
-                    <div class="row"><input type="submit" value="Submit via WhatsApp" class="input-button submit-button" id="submitBtn"></div>
-                </form>
-                
-                <div class="whatsaap">
-                    <!-- whatsaap symbol -->
-                    <p>Chat with Us via Whatsaap</p>
-                    <img class="qr" src="qrcode.png">
-                    <h3>OR</h3>
-                    <button class="call"> Call Us </button>
-                </div>
-            </div>
-            <div class="contact-container">
-                <div class="contact-card">
-                    <img src="phoneicon.png" alt="Phone Icon" class="picon">
-                    <h3>( +91 ) 90360 56057</h3>
-                    <p>Call or message us on WhatsApp for quick responses.</p>
-                </div>
+    <section class="container">
+        <h1 class="underline-title">Contact Us</h1>
+        <p class="subtext">We love serving our customers, so feel free to contact us</p>
 
-                <div class="contact-card email-card">
-                    <img src="emailicon.png" alt="Email Icon" class="eicon">
-                    <h3>business@uven.co.in</h3>
-                    <p>Drop us an email, and we’ll get back to you as soon as possible.</p>
-                </div>
-
-                <div class="contact-card location-card">
-                    <img src="locationicon.png" alt="Location Icon" class="licon">
-                    <h3>Office Address</h3>
-                    <p><a style="text-decoration: none;color:white;" href="https://maps.app.goo.gl/jNUTrqmZGAdsDBfCA">1, 2nd Stage, Kottigepalya, Bengaluru, Karnataka 560091</a></p>
-                </div>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7942438809205!2d77.51114949999999!3d12.985008099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3c35efc68f09%3A0x82744dc5865349af!2s1%2C%202nd%20Stage%2C%20Kottigepalya%2C%20Bengaluru%2C%20Karnataka%20560091!5e0!3m2!1sen!2sin!4v1741104302194!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="whatsapp-button-container">
+            <button id="whatsappBtn">
+                <i class="fab fa-whatsapp"></i> Message us on WhatsApp
+            </button>
         </div>
-    </div>
 
-    <!-- Footer -->
+        <div class="info-boxes">
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 9036056057</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>NGB 2nd Stg,<br>Bengaluru, Karnataka, India</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>business@uven.co.in</p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=NGB%202nd%20Stage%20Bengaluru%20Karnataka&output=embed"
+                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
     <footer>
         <h3>Copyright © 2024 UVEN - All Rights Reserved.</h3>
         <i class="fa fa-linkedin-square" style="font-size:26px;color:white"></i>
     </footer>
 
-    <!-- External JavaScript -->
     <script src="contactus.js"></script>
 </body>
+
 </html>

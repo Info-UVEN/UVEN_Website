@@ -290,7 +290,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #1a4631;
+  background-color: #d7e0db;
   padding: 60px 20px 0 20px;
   font-family: 'Inter', sans-serif;
 }
@@ -302,13 +302,13 @@
 
 .mission-left h2 {
   font-size: 34px;
-  color: #ffffff;
+  color: darkgreen;
   margin-bottom: 10px;
 }
 
 .tagline {
   font-size: 15px;
-  color: #bdd4cb;
+  color: #24513d;
 }
 
 .mission-right {
