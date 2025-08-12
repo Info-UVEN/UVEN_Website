@@ -1,0 +1,32 @@
+export default function Navbar() {
+  return (
+    <nav className="flex flex-row w-full px-[5%] py-[0.8%] box-border bg-primary font-body font-normal text-[1.3rem]">
+      {/* px -> padding x-axis : left + right, py -> padding y-axis : top + bottom */}
+      
+      <div className="w-2/5"> {/* width:40% */}
+        <img src="/logo.png" alt="Logo" className="w-1/4" />
+      </div>
+
+      <div className="flex flex-row justify-evenly items-center w-3/5">
+
+        <p><a href="/" className="no-underline !text-red-500">Home</a></p>
+        <p><a href="/about" className="no-underline !text-red-500">About</a></p>
+        <p><a href="/services" className="no-underline !text-red-500">Services</a></p>
+        <p><a href="/sectors" className="no-underline !text-red-500">Sectors</a></p>
+        <p><a href="/projects" className="no-underline !text-red-500">Projects</a></p>
+        <p><a href="/contact" className="no-underline !text-red-500">Contact</a></p>
+      
+      </div>
+
+    </nav>
+    
+  );
+}
+
+
+// NavBar and Footer exist in components and not in app because 
+// they don't navigate to a new page 
+// Ex: /about -> app/about/page.js
+// /navbar -> app/navbar.js does'nt make sense 
+// Navbar and footer are to be displayed in all the pages so it is imported as a component 
+// in app/page.js -> /
