@@ -5,9 +5,17 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        <main>{children}</main>
+      <body className="flex flex-col min-h-screen">
+        {/* Navbar fixed at the top */}
+        <header className="sticky top-0 z-50">
+          <Navbar />
+        </header>
+
+        {/* Main content grows between navbar & footer */}
+        <main className="flex-1">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
