@@ -1,7 +1,7 @@
 const sectorsData = [
   {
-    img: "/sectors/highrise.jpg",
-    title: "Residential Towers / High-Rise Buildings",
+    img: "/sectors/res.jpg",
+    title: "RESIDENTIAL TOWERS / HIGH-RISE BUILDINGS",
     desc: [
       "BIM-integrated MEP planning to optimize space utilization and avoid service clashes.",
       "Quantity Surveying expertise ensures accurate cost control from concept to completion.",
@@ -10,8 +10,8 @@ const sectorsData = [
     ]
   },
   {
-    img: "/sectors/comm.jpg",
-    title: "Commercial Offices / Complexes",
+    img: "/sectors/off.jpg",
+    title: "COMMERCIAL OFFICES / COMPLEXES",
     desc: [
       "End-to-end MEP modeling covering HVAC, electrical distribution, water, and fire protection.",
       "Quantity Surveying services for precise estimation, budgeting, and cost optimization.",
@@ -20,8 +20,8 @@ const sectorsData = [
     ]
   },
   {
-    img: "/sectors/food.jpg",
-    title: "Food Manufacturing & Processing",
+    img: "/sectors/foodman.jpg",
+    title: "FOOD MANUFACTURING & PROCESSING",
     desc: [
       "Specialized MEP design for hygienic ventilation, process piping, and utility systems.",
       "BIM-driven layouts to ensure compliance with international safety and hygiene standards.",
@@ -30,8 +30,8 @@ const sectorsData = [
     ]
   },
   {
-    img: "/sectors/ind.jpg",
-    title: "Industrial & Manufacturing",
+    img: "/sectors/indus.jpg",
+    title: "INDUSTRIAL & MANUFACTURING",
     desc: [
       "Robust MEP solutions for heavy-duty plants with focus on efficiency and reliability.",
       "Quantity Surveying services to control project budgets and optimize material usage.",
@@ -40,8 +40,8 @@ const sectorsData = [
     ]
   },
   {
-    img: "/sectors/club.jpg",
-    title: "Clubs, Sports & Aquatic Centers",
+    img: "/sectors/swim.jpg",
+    title: "CLUBS, SPORTS & AQUATIC CENTERS",
     desc: [
       "Advanced MEP design covering ventilation, water treatment, and lighting systems.",
       "BIM-based planning to ensure safe, efficient, and user-friendly recreational environments.",
@@ -51,7 +51,7 @@ const sectorsData = [
   },
   {
     img: "/sectors/halls.jpg",
-    title: "Halls & Gymnasia",
+    title: "HALLS & GYMNASIA",
     desc: [
       "MEP layouts ensuring proper air circulation, lighting, and fire protection systems.",
       "BIM coordination to integrate structural, architectural, and service elements seamlessly.",
@@ -61,7 +61,7 @@ const sectorsData = [
   },
   {
     img: "/sectors/edu.jpg",
-    title: "Educational Institutions",
+    title: "EDUCATIONAL INSTITUTIONS",
     desc: [
       "MEP solutions for safe, sustainable, and technology-enabled learning environments.",
       "Quantity Surveying services that ensure cost-effective campus development.",
@@ -71,7 +71,7 @@ const sectorsData = [
   },
   {
     img: "/sectors/retail.jpg",
-    title: "Retail Buildings",
+    title: "RETAIL BUILDINGS",
     desc: [
       "Tailored MEP design to create comfortable, energy-efficient retail environments.",
       "BIM coordination to maximize space utilization and minimize service conflicts.",
@@ -81,7 +81,7 @@ const sectorsData = [
   },
   {
     img: "/sectors/trans.jpg",
-    title: "Transport & Infrastructure",
+    title: "TRANSPORT & INFRASTRUCTURE",
     desc: [
       "Large-scale MEP design for airports, metro stations, and transit hubs.",
       "BIM-driven clash detection and modeling for efficient infrastructure delivery.",
@@ -90,8 +90,8 @@ const sectorsData = [
     ]
   },
   {
-    img: "/sectors/health.jpg",
-    title: "Healthcare & Hospitals",
+    img: "/sectors/hos.jpg",
+    title: "HEALTHCARE & HOSPITALS",
     desc: [
       "Specialized MEP systems including HVAC for sterile areas and medical gas piping.",
       "BIM modeling to meet international healthcare safety and operational standards.",
@@ -101,7 +101,7 @@ const sectorsData = [
   },
   {
     img: "/sectors/resort.jpg",
-    title: "Hotels & Resorts",
+    title: "HOTELS & RESORTS",
     desc: [
       "Luxury-focused MEP design covering HVAC, plumbing, and energy management.",
       "BIM integration to ensure seamless coordination and efficient space utilization.",

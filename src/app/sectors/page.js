@@ -1,85 +1,70 @@
+//SERVER SIDE COMPONENTS - Code runs on the server (Node.js in Next.js).
+//All files in app/ are server components by default.
+//Allowed: async/await for data fetching (fetch, DB queries), 
+//passing data to children, 
+//rendering static/dynamic HTML.
+//Not Allowed : React Hooks
+
+//CLIENT SIDE COMPONENTS - Code runs in the browser ( handles interactivity (clicks, typing, animations))
+//Becomes a client component if you put "use client"; at the top of the file.
+//Allowed: React hooks (useState, useEffect, useRef), 
+//event handlers (onClick, onChange), 
+//browser APIs.
+//Not allowed: Direct server-only operations like DB queries (but you can pass data down as props).
+
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import sectorsData from './sectorsData.js';
-import { Public_Sans, Prompt } from "next/font/google";
+import sectorsData from "./sectorsData.js";
+import { Montserrat, Public_Sans } from "next/font/google";
 
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["300"], // choose what weights you need
-});
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700", "800"] });
+const petch = Public_Sans({ subsets: ["latin"], weight: ["400"] });
 
-const petch = Prompt({
-  subsets: ["latin"],
-  weight: ["400"], // pick what you need
-  variable: "--font-chakra",
-});
-
-
-export default function SectorsScroll() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const scrollRef = useRef(null);
-
-  // Update active index based on scroll inside right column
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const sections = container.querySelectorAll(".sector-section");
-      let current = 0;
-      sections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        if (rect.top <= containerRect.top + containerRect.height / 2) {
-          current = index;
-        }
-      });
-      setActiveIndex(current);
-    };
-
-    container.addEventListener("scroll", handleScroll);
-    return () => container.removeEventListener("scroll", handleScroll);
-  }, []);
-
+export default function Sectors() {
   return (
-    <div className="flex flex-col lg:flex-row bg-black">
-      {/* Left Sticky Image */}
-      <div className="w-full lg:w-1/2 lg:sticky lg:top-20 h-[calc(100vh-80px)] flex items-center justify-center p-10">
-        <div className="w-full h-full flex items-center justify-center">
-          <Image
-            src={sectorsData[activeIndex].img}
-            alt={sectorsData[activeIndex].title}
-            width={400}
-            height={500}
-            className="rounded-lg object-cover max-h-full max-w-full shadow-lg"
-          />
-        </div>
-      </div>
+    <div className="bg-white pt-24 pb-12 flex flex-col items-center">
+    <h1
+      className={`${montserrat.className} text-center font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-normal text-[#252525] mb-10`}
+    >
+      SECTORS
+    </h1>
 
-      {/* Right Scrollable Content with full screen snapping */}
-      <div
-        ref={scrollRef}
-        className={`w-full ${publicSans.className} lg:w-1/2 h-[calc(100vh-80px)] overflow-y-scroll snap-y snap-mandatory mt-8 mr-8`}
-      >
+      <div className="grid gap-8 px-6 md:px-12 lg:px-16 md:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full">
         {sectorsData.map((sector, index) => (
-          <section
+          <div
             key={index}
-            className="sector-section h-[calc(100vh-80px)] flex flex-col justify-start p-10 snap-start"
+            className="bg-white shadow-lg overflow-hidden flex flex-col max-w-sm mx-auto"
           >
-            <h2 className={`text-3xl font-bold text-gray-300 ${petch.className}`}>
-              {sector.title}
-            </h2>
-            <ul className="mt-5 text-lg text-gray-500 leading-relaxed space-y-4 list-disc pl-5">
-              {sector.desc.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-          </section>
+            {/* Fixed image height for square-like shape */}
+            <div className="relative w-full h-48">
+              <Image
+                src={sector.img}
+                alt={sector.title}
+                fill
+                className="object-cover"
+              />
+            </div>
 
+            <div className="p-5 flex flex-col flex-1">
+              <h2
+                className={`${montserrat.className} text-xl sm:text-xl md:text-xl text-[#252525] mb-3`}
+              >
+                {sector.title}
+              </h2>
+              <ul className="text-[#252525] text-sm sm:text-base leading-relaxed space-y-1 list-disc pl-5 flex-1">
+                {sector.desc.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         ))}
       </div>
     </div>
   );
 }
+
+
+//Each HTML tag (<div>, <button>, <h1>) becomes a DOM element.
+//n React, you normally don’t touch DOM elements directly. React handles them for you.
