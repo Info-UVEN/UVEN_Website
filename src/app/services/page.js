@@ -31,51 +31,51 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
             {/* Service 01 */}
             <div>
-              <h3 className="font-bold text-base sm:text-lg md:text-lg text-gray-800">
-                HVAC Design
+              <h3 className="font-bold text-base sm:text-lg text-gray-800">
+                Quantity Surveying
               </h3>
-              <p className="text-gray-600 mt-1 sm:mt-2 md:mt-2 text-sm sm:text-base md:text-base">
-                Concept, load calculations, ventilation, smoke management,
-                equipment selection, ducting & piping design, shop drawings, and
-                as-built documentation.
+              <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                Comprehensive QS for MEP & Civil works including material take-offs,
+                BOQ preparation, procurement packaging, cost optimization and
+                tender validation.
               </p>
-              <hr className="mt-3 sm:mt-4 border-gray-300" />
+              <hr className="mt-4 border-gray-300" />
             </div>
 
             {/* Service 02 */}
             <div>
-              <h3 className="font-bold text-base sm:text-lg md:text-lg text-gray-800">
-                Plumbing & Fire Fighting
+              <h3 className="font-bold text-base sm:text-lg text-gray-800">
+                MEP Design & Engineering
               </h3>
-              <p className="text-gray-600 mt-1 sm:mt-2 md:mt-2 text-sm sm:text-base md:text-base">
-                Water supply, drainage, fire safety systems, UPC/IPC compliance,
-                shop drawings, and final as-built designs for seamless execution.
+              <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                End-to-end Mechanical, Electrical & Plumbing (MEP) design services —
+                from schematic & concept design to IFC / As-built documentation.
               </p>
-              <hr className="mt-3 sm:mt-4 border-gray-300" />
+              <hr className="mt-4 border-gray-300" />
             </div>
 
             {/* Service 03 */}
             <div>
-              <h3 className="font-bold text-base sm:text-lg md:text-lg text-gray-800">
-                Electrical High & Low Current
+              <h3 className="font-bold text-base sm:text-lg text-gray-800">
+                BIM & Shop Drawings
               </h3>
-              <p className="text-gray-600 mt-1 sm:mt-2 md:mt-2 text-sm sm:text-base md:text-base">
-                Lighting, panel boards, cable trays, single-line diagrams, and
-                BOQs with seamless integration across high & low voltage systems.
+              <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                2D/3D BIM modeling, coordination, clash detection and accurate
+                production of shop drawings for precise execution on site.
               </p>
-              <hr className="mt-3 sm:mt-4 border-gray-300" />
+              <hr className="mt-4 border-gray-300" />
             </div>
 
             {/* Service 04 */}
             <div>
-              <h3 className="font-bold text-base sm:text-lg md:text-lg text-gray-800">
-                Civil & Architectural QS
+              <h3 className="font-bold text-base sm:text-lg text-gray-800">
+                Civil & Architectural Support
               </h3>
-              <p className="text-gray-600 mt-1 sm:mt-2 md:mt-2 text-sm sm:text-base md:text-base">
-                Quantity surveying, materials take-off, BOQ preparation, cost
-                optimization, procurement packaging, and tender stage validation.
+              <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                Structural & architectural quantity surveying, project cost control,
+                documentation, and technical support across all project phases.
               </p>
-              <hr className="mt-3 sm:mt-4 border-gray-300" />
+              <hr className="mt-4 border-gray-300" />
             </div>
           </div>
         </div>
@@ -83,15 +83,12 @@ export default function ServicesPage() {
 
       {/* Custom Media Queries */}
       <style jsx>{`
-        /* Show image only on phone portrait */
         @media (max-width: 767px) and (orientation: portrait) {
           .show-on-phone-portrait {
             display: block !important;
             height: 250px !important;
           }
         }
-
-        /* Small devices landscape: hide image on all small phones */
         @media (max-width: 1024px) and (orientation: landscape) {
           .hide-on-small-landscape {
             display: none !important;
@@ -105,13 +102,7 @@ export default function ServicesPage() {
           p {
             font-size: 0.75rem !important;
           }
-          hr {
-            margin-top: 0.4rem !important;
-            margin-bottom: 0.4rem !important;
-          }
         }
-
-        /* Portrait tablets: iPad mini, Surface Pro, Asus Zenbook, Galaxy A51/71 */
         @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
           .hide-on-portrait-tablets {
             display: none !important;
@@ -125,11 +116,6 @@ export default function ServicesPage() {
           p {
             font-size: 0.9rem !important;
           }
-        }
-
-        /* Reduce navbar gap */
-        div.pt-20 {
-          padding-top: 4rem !important;
         }
       `}</style>
     </div>
