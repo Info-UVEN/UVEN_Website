@@ -44,7 +44,7 @@ export default function HomePage() {
 
         {/* Bottom Search Bar */}
         <div className="absolute bottom-0 w-full flex justify-center">
-          <div className="w-full bg-[#065f46] flex items-center justify-center py-6 sm:py-5 px-2 sm:px-6">
+          <div className="w-full bg-black flex items-center justify-center py-6 sm:py-5 px-2 sm:px-6">
             <div className="flex items-center bg-white rounded-full shadow-md px-4 py-3 w-full max-w-lg">
               <Search size={20} className="text-gray-500 mr-3 sm:mr-3" />
               <span className="flex-1 text-gray-700 text-sm sm:text-base md:text-base max-[440px]:text-xs">
