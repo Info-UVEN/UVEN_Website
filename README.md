@@ -5,7 +5,7 @@ This repository contains the source code for the official website of **United Ve
 ---
 
 ## ⚠️ Important Notice  
--  This project is the **exclusive intellectual property** of *United Ventures Engineering Services*.  
+-  This project is the **exclusive intellectual property** of *United Ventures Engineering Consultancy Services*.  
 - **Cloning, copying, redistributing, or unauthorized access is strictly prohibited.**  
 - The codebase is provided **only for internal/company-approved purposes**.  
 
