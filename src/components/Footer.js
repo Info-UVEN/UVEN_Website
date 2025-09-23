@@ -27,20 +27,6 @@ export default function Footer() {
               >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a 
-                href="" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a 
-                href="" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Facebook className="h-6 w-6" />
-              </a>
             </div>
           </div>
 
