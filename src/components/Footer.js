@@ -21,21 +21,21 @@ export default function Footer() {
             {/* Social media links */}
             <div className="flex space-x-6 text-[#1C7A63] justify-center">
               <a 
-                href="https://linkedin.com/company/uven" 
+                href="linkedin.com/in/united-ventures-engineering-consultancy-services-00b268386" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
               <a 
-                href="https://instagram.com/uven" 
+                href="" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <Instagram className="h-6 w-6" />
               </a>
               <a 
-                href="https://facebook.com/uven" 
+                href="" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
