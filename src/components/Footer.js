@@ -21,7 +21,7 @@ export default function Footer() {
             {/* Social media links */}
             <div className="flex space-x-6 text-[#1C7A63] justify-center">
               <a 
-                href="linkedin.com/in/united-ventures-engineering-consultancy-services-00b268386" 
+                href="https://linkedin.com/in/united-ventures-engineering-consultancy-services-00b268386" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
