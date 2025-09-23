@@ -1,6 +1,6 @@
 ## UNITED VENTURES ENGINEERING CONSULTANCY SERVICES
 
-This repository contains the source code for the official website of **United Ventures Engineering Consulatncy Services**.  
+This repository contains the source code for the official website of **United Ventures Engineering Consultancy Services**.  
 
 ---
 
